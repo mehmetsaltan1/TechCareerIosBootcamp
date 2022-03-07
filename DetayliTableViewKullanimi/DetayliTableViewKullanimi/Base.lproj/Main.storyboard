@@ -31,14 +31,14 @@
                                                     <rect key="frame" x="8" y="8" width="398" height="164"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telefon" translatesAutoresizingMaskIntoConstraints="NO" id="TJB-bu-4A6">
-                                                            <rect key="frame" x="16" y="18" width="128" height="128"/>
+                                                            <rect key="frame" x="16" y="26" width="128" height="128"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="128" id="DdD-ll-gAd"/>
                                                                 <constraint firstAttribute="height" constant="128" id="rOY-KE-lGa"/>
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Bs8-Iw-QAU">
-                                                            <rect key="frame" x="160" y="23.5" width="120" height="117"/>
+                                                            <rect key="frame" x="160" y="31.5" width="120" height="117"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İphone 13 Pro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50I-P3-hay">
                                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="24"/>
@@ -65,18 +65,18 @@
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="Bs8-Iw-QAU" firstAttribute="centerY" secondItem="eLd-zj-QQ0" secondAttribute="centerY" id="55Q-fP-uaE"/>
-                                                        <constraint firstItem="TJB-bu-4A6" firstAttribute="leading" secondItem="eLd-zj-QQ0" secondAttribute="leading" constant="16" id="ENr-TU-FQZ"/>
-                                                        <constraint firstItem="TJB-bu-4A6" firstAttribute="centerY" secondItem="eLd-zj-QQ0" secondAttribute="centerY" id="TxB-Ic-xZq"/>
+                                                        <constraint firstItem="Bs8-Iw-QAU" firstAttribute="top" secondItem="eLd-zj-QQ0" secondAttribute="top" constant="31.5" id="Asf-RM-Uj9"/>
+                                                        <constraint firstItem="Bs8-Iw-QAU" firstAttribute="centerY" secondItem="TJB-bu-4A6" secondAttribute="centerY" id="VDk-Tg-alP"/>
                                                         <constraint firstItem="Bs8-Iw-QAU" firstAttribute="leading" secondItem="TJB-bu-4A6" secondAttribute="trailing" constant="16" id="VOU-pg-OSt"/>
+                                                        <constraint firstItem="Bs8-Iw-QAU" firstAttribute="leading" secondItem="eLd-zj-QQ0" secondAttribute="leading" constant="160" id="Xht-2n-eF3"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="eLd-zj-QQ0" secondAttribute="bottom" constant="8" id="26B-8z-hUb"/>
-                                                <constraint firstAttribute="trailing" secondItem="eLd-zj-QQ0" secondAttribute="trailing" constant="8" id="5zA-TD-Ev6"/>
-                                                <constraint firstItem="eLd-zj-QQ0" firstAttribute="top" secondItem="q11-L2-PbQ" secondAttribute="top" constant="8" id="Avy-kd-qTD"/>
-                                                <constraint firstItem="eLd-zj-QQ0" firstAttribute="leading" secondItem="q11-L2-PbQ" secondAttribute="leading" constant="8" id="np9-CB-mqQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="eLd-zj-QQ0" secondAttribute="trailing" constant="8" id="4Fq-Yi-KqK"/>
+                                                <constraint firstAttribute="bottom" secondItem="eLd-zj-QQ0" secondAttribute="bottom" constant="8" id="4zF-ac-8Ts"/>
+                                                <constraint firstItem="eLd-zj-QQ0" firstAttribute="leading" secondItem="q11-L2-PbQ" secondAttribute="leading" constant="8" id="DyF-ln-rz8"/>
+                                                <constraint firstItem="eLd-zj-QQ0" firstAttribute="top" secondItem="q11-L2-PbQ" secondAttribute="top" constant="8" id="Jcn-Hu-NuO"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -101,11 +101,62 @@
                     <navigationItem key="navigationItem" title="Ürünler" id="qCK-YG-VtO"/>
                     <connections>
                         <outlet property="urunlerTableView" destination="ifM-kI-Ijq" id="a5T-ud-6zr"/>
+                        <segue destination="79z-Xe-c3T" kind="show" identifier="toDetay" id="OUW-Sg-veb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968.11594202898561" y="128.57142857142856"/>
+            <point key="canvasLocation" x="870" y="129"/>
+        </scene>
+        <!--DetayVC-->
+        <scene sceneID="tVI-2e-TWl">
+            <objects>
+                <viewController id="79z-Xe-c3T" customClass="DetayVC" customModule="DetayliTableViewKullanimi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xa3-IL-bL2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telefon" translatesAutoresizingMaskIntoConstraints="NO" id="DcU-aI-4VM">
+                                <rect key="frame" x="79" y="172" width="256" height="256"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13.999 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdp-eC-geG">
+                                <rect key="frame" x="147" y="460" width="120.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vU-O3-0Xl">
+                                <rect key="frame" x="32" y="787" width="350" height="43"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SEPETE EKLE">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sepeteEkleButton:" destination="79z-Xe-c3T" eventType="touchUpInside" id="gQs-fO-vZG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LJO-qt-In1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wdp-eC-geG" firstAttribute="top" secondItem="DcU-aI-4VM" secondAttribute="bottom" constant="32" id="Xdd-fJ-uJK"/>
+                            <constraint firstItem="Wdp-eC-geG" firstAttribute="centerX" secondItem="xa3-IL-bL2" secondAttribute="centerX" id="YiK-e9-2aZ"/>
+                            <constraint firstItem="LJO-qt-In1" firstAttribute="bottom" secondItem="7vU-O3-0Xl" secondAttribute="bottom" constant="32" id="bvP-hF-S0S"/>
+                            <constraint firstItem="LJO-qt-In1" firstAttribute="trailing" secondItem="7vU-O3-0Xl" secondAttribute="trailing" constant="32" id="i9O-da-Tc1"/>
+                            <constraint firstItem="DcU-aI-4VM" firstAttribute="top" secondItem="LJO-qt-In1" secondAttribute="top" constant="32" id="j5v-Sp-qZG"/>
+                            <constraint firstItem="7vU-O3-0Xl" firstAttribute="leading" secondItem="LJO-qt-In1" secondAttribute="leading" constant="32" id="kFP-DR-ZGT"/>
+                            <constraint firstItem="DcU-aI-4VM" firstAttribute="centerX" secondItem="xa3-IL-bL2" secondAttribute="centerX" id="x8S-Bh-TAx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JbC-bE-grW"/>
+                    <connections>
+                        <outlet property="urunFiyat" destination="Wdp-eC-geG" id="YRL-G4-ifg"/>
+                        <outlet property="urunResim" destination="DcU-aI-4VM" id="cCW-em-fMq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EvO-BH-Kyh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1630" y="129"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NjX-Ll-ikd">

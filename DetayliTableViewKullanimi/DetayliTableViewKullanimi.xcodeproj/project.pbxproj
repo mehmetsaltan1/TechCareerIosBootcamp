@@ -18,6 +18,7 @@
 		9BA3DA7E27D3D8DD004F1244 /* DetayliTableViewKullanimiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3DA7D27D3D8DD004F1244 /* DetayliTableViewKullanimiUITestsLaunchTests.swift */; };
 		9BA3DA8B27D3D94C004F1244 /* Urunler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3DA8A27D3D94C004F1244 /* Urunler.swift */; };
 		9BA3DA8D27D3E127004F1244 /* UrunTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3DA8C27D3E127004F1244 /* UrunTableViewCell.swift */; };
+		9BE7499627D66F3100C96228 /* DetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7499527D66F3100C96228 /* DetayVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9BA3DA7D27D3D8DD004F1244 /* DetayliTableViewKullanimiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayliTableViewKullanimiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9BA3DA8A27D3D94C004F1244 /* Urunler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urunler.swift; sourceTree = "<group>"; };
 		9BA3DA8C27D3E127004F1244 /* UrunTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunTableViewCell.swift; sourceTree = "<group>"; };
+		9BE7499527D66F3100C96228 /* DetayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				9BA3DA5C27D3D8DA004F1244 /* SceneDelegate.swift */,
 				9BA3DA5E27D3D8DA004F1244 /* ViewController.swift */,
 				9BA3DA6027D3D8DA004F1244 /* Main.storyboard */,
+				9BE7499527D66F3100C96228 /* DetayVC.swift */,
 				9BA3DA8C27D3E127004F1244 /* UrunTableViewCell.swift */,
 				9BA3DA6327D3D8DD004F1244 /* Assets.xcassets */,
 				9BA3DA8A27D3D94C004F1244 /* Urunler.swift */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE7499627D66F3100C96228 /* DetayVC.swift in Sources */,
 				9BA3DA5F27D3D8DA004F1244 /* ViewController.swift in Sources */,
 				9BA3DA8B27D3D94C004F1244 /* Urunler.swift in Sources */,
 				9BA3DA5B27D3D8DA004F1244 /* AppDelegate.swift in Sources */,

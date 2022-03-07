@@ -15,6 +15,7 @@ class ViewController: UIViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
+        urunlerTableView.separatorColor = UIColor.init(white: 0.95, alpha: 1)
         urunlerTableView.delegate = self
         urunlerTableView.dataSource = self
         let u1 = Urunler(urun_id: 1, urun_ad: "Macbook Pro 14", urun_resim_ad: "bilgisayar", urun_fiyat: 23499.9)
@@ -36,7 +37,9 @@ class ViewController: UIViewController {
 
 
 }
-extension ViewController : UITableViewDelegate,UITableViewDataSource {
+extension ViewController : UITableViewDelegate,UITableViewDataSource,HucreProtocol {
+  
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return urunlerListe.count
     }
@@ -46,7 +49,40 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource {
         hucre.urunResimImageView.image = UIImage(named: urun.urun_resim_ad!)
         hucre.urunAdLabel.text = urun.urun_ad
         hucre.urunFiyatLabel.text = "\(urun.urun_fiyat!) ₺"
+        hucre.backgroundColor = UIColor.init(white: 0.95, alpha: 1)
+        hucre.hucreArkaPlan.layer.cornerRadius = 10.0
+        //Yetkilendirme
+        hucre.hucreProtocol = self
+        hucre.indexPath = indexPath
         return hucre
+    }
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let urun = urunlerListe[indexPath.row]
+        let silAction = UIContextualAction(style: .destructive, title: "Sil"){ (ca,v,b) in
+            print("\(urun.urun_ad!) silindi")
+        }
+        let duzenleAction = UIContextualAction(style: .normal, title: "Düzenle"){ (ca,v,b) in
+            print("\(urun.urun_ad!) düzenlendi")
+            self.performSegue(withIdentifier: "toDetay", sender: urun)
+            
+        }
+        return UISwipeActionsConfiguration(actions: [silAction,duzenleAction])
+    }
+    func buttonTiklandi(indexPath: IndexPath) {
+        let urun = urunlerListe[indexPath.row]
+        print("\(urun.urun_ad!) sepete eklendi")
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let urun = urunlerListe[indexPath.row]
+        performSegue(withIdentifier: "toDetay", sender: urun)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetay" {
+            let urun = sender as? Urunler
+            let gidilecekVC = segue.destination as! DetayVC
+            gidilecekVC.urun = urun
+        }
     }
 }
 
