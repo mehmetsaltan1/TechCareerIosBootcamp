@@ -39,7 +39,9 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource {
+extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,HucreProtocol {
+  
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return filmlerListesi.count
     }
@@ -56,7 +58,14 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource {
         cell.layer.borderWidth = 0.3
         cell.layer.cornerRadius = 10
         
+        //Yetkilendirme İşlemi
+        cell.indexPath = indexPath
+        cell.hucreProtocol = self
         return cell
+    }
+    func sepeteEkleTikla(indexPath: IndexPath) {
+        let film = filmlerListesi[indexPath.row]
+        print("\(film.filmAdi!) sepete eklendi")
     }
     
     
