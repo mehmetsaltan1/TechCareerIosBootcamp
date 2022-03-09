@@ -18,6 +18,7 @@
 		9B2FB60127D9039100AE3BA0 /* DetayliCollectionViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2FB60027D9039100AE3BA0 /* DetayliCollectionViewUITestsLaunchTests.swift */; };
 		9B2FB68627D9092100AE3BA0 /* Filmler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2FB68527D9092100AE3BA0 /* Filmler.swift */; };
 		9B2FB68827D90CBD00AE3BA0 /* FilmlerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2FB68727D90CBD00AE3BA0 /* FilmlerCollectionViewCell.swift */; };
+		9B2FB68A27D91B1E00AE3BA0 /* DetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2FB68927D91B1E00AE3BA0 /* DetayVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9B2FB60027D9039100AE3BA0 /* DetayliCollectionViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayliCollectionViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9B2FB68527D9092100AE3BA0 /* Filmler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filmler.swift; sourceTree = "<group>"; };
 		9B2FB68727D90CBD00AE3BA0 /* FilmlerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmlerCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B2FB68927D91B1E00AE3BA0 /* DetayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		9B2FB5DC27D9038E00AE3BA0 /* DetayliCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				9B2FB68927D91B1E00AE3BA0 /* DetayVC.swift */,
 				9B2FB5DD27D9038E00AE3BA0 /* AppDelegate.swift */,
 				9B2FB5DF27D9038E00AE3BA0 /* SceneDelegate.swift */,
 				9B2FB5E127D9038E00AE3BA0 /* ViewController.swift */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B2FB68A27D91B1E00AE3BA0 /* DetayVC.swift in Sources */,
 				9B2FB5E227D9038E00AE3BA0 /* ViewController.swift in Sources */,
 				9B2FB5DE27D9038E00AE3BA0 /* AppDelegate.swift in Sources */,
 				9B2FB5E027D9038E00AE3BA0 /* SceneDelegate.swift in Sources */,

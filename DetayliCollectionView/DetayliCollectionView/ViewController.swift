@@ -67,6 +67,18 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,H
         let film = filmlerListesi[indexPath.row]
         print("\(film.filmAdi!) sepete eklendi")
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let film = filmlerListesi[indexPath.row]
+        performSegue(withIdentifier: "toDetay", sender: film)
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetay" {
+            let film = sender as? Filmler
+            let gidilecekVC = segue.destination as! DetayVC
+            gidilecekVC.film = film
+        }
+    }
     
     
 }
