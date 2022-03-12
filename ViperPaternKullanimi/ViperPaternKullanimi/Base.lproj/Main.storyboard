@@ -1,24 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViperPaternKullanimi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbx-gL-Nfn">
+                                <rect key="frame" x="171.5" y="76" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sayı 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GAR-Ko-SsI">
+                                <rect key="frame" x="32" y="144" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sayı 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x1m-NX-bZA">
+                                <rect key="frame" x="32" y="210" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZC-88-1uF">
+                                <rect key="frame" x="32" y="276" width="91" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="TOPLAMA"/>
+                                <connections>
+                                    <action selector="buttonToplama:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D6p-qa-n0J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y64-0c-Ycx">
+                                <rect key="frame" x="300" y="276" width="82" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ÇARPMA"/>
+                                <connections>
+                                    <action selector="buttonCarpma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbi-FB-dO5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y64-0c-Ycx" firstAttribute="top" secondItem="x1m-NX-bZA" secondAttribute="bottom" constant="32" id="0Bt-Wx-7Pv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x1m-NX-bZA" secondAttribute="trailing" constant="32" id="5Os-nG-vDe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y64-0c-Ycx" secondAttribute="trailing" constant="32" id="8Kb-Xp-4vh"/>
+                            <constraint firstItem="GAR-Ko-SsI" firstAttribute="top" secondItem="sbx-gL-Nfn" secondAttribute="bottom" constant="32" id="KGg-d8-8Qw"/>
+                            <constraint firstItem="uZC-88-1uF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="OmO-PN-lsV"/>
+                            <constraint firstItem="x1m-NX-bZA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="UDH-Il-ge6"/>
+                            <constraint firstItem="sbx-gL-Nfn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="XRc-6X-mre"/>
+                            <constraint firstItem="x1m-NX-bZA" firstAttribute="top" secondItem="GAR-Ko-SsI" secondAttribute="bottom" constant="32" id="ZeR-xW-CvN"/>
+                            <constraint firstItem="sbx-gL-Nfn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dfy-ED-aJ6"/>
+                            <constraint firstItem="uZC-88-1uF" firstAttribute="top" secondItem="x1m-NX-bZA" secondAttribute="bottom" constant="32" id="g3e-Qm-Lnq"/>
+                            <constraint firstItem="GAR-Ko-SsI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="lCO-6G-aYQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GAR-Ko-SsI" secondAttribute="trailing" constant="32" id="wO4-ud-4IW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelSonuc" destination="sbx-gL-Nfn" id="ppv-G1-znI"/>
+                        <outlet property="textFieldSayi1" destination="GAR-Ko-SsI" id="pRc-f6-lXX"/>
+                        <outlet property="textFieldSayi2" destination="x1m-NX-bZA" id="HlA-ip-JkE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="58" y="115"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
