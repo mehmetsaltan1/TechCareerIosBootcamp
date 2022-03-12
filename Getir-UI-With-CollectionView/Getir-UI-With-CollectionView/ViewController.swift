@@ -8,10 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        navigationController?.navigationBar.barStyle = .black
+        let resim = UIImage(named: "getirlogo3")
+        self.navigationItem.titleView = UIImageView(image: resim)
+        
     }
 
 
