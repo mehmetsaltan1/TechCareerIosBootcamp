@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet var filterButtons: [UIButton]!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Navbar a resim atanması
         navigationController?.navigationBar.barStyle = .black
+        //Navbar a resim atanması
         let resim = UIImage(named: "getirlogo")
         self.navigationItem.titleView = UIImageView(image: resim)
         //Filtre butonlarına özellik aktarımı
