@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var filterView: UIView!
     @IBOutlet var filterButtons: [UIButton]!
     var urunlerListesi = [Urunler]()
+    @IBOutlet weak var navtitleItem: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         urunlerCollectionView.delegate = self
