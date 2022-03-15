@@ -289,7 +289,7 @@
                         <viewLayoutGuide key="safeArea" id="oy3-gx-Bim"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="New Project (4)" id="Y1F-5g-9Ss"/>
+                    <tabBarItem key="tabBarItem" title="" image="fabbutton" id="Y1F-5g-9Ss"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKZ-ch-gOF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -329,7 +329,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="New Project (4)" width="60" height="60"/>
+        <image name="fabbutton" width="60" height="60"/>
         <image name="giftbox-icon" width="19" height="19"/>
         <image name="home-icon" width="19" height="19"/>
         <image name="meyvetabagi" width="300" height="300"/>
