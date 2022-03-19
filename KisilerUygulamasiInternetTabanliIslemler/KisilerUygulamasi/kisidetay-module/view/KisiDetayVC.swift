@@ -26,7 +26,7 @@ class KisiDetayVC: UIViewController {
     
     @IBAction func buttonGuncelle(_ sender: Any) {
         if let ka = tfKisiAd.text, let kt = tfKisiTel.text, let k = kisi {
-            kisiDetayPresenterNesnesi?.guncelle(kisi_id: k.kisi_id!, kisi_ad: ka, kisi_tel: kt)
+            kisiDetayPresenterNesnesi?.guncelle(kisi_id: Int(k.kisi_id!)!, kisi_ad: ka, kisi_tel: kt)
         }
     }
 }

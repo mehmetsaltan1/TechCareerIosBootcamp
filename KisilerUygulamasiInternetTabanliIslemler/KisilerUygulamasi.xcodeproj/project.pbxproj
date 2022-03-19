@@ -32,6 +32,7 @@
 		79B9EF2727CFD0B000E03CC5 /* KisiDetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9EF2627CFD0B000E03CC5 /* KisiDetayVC.swift */; };
 		79B9EF2927CFDBBE00E03CC5 /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9EF2827CFDBBE00E03CC5 /* Kisiler.swift */; };
 		79B9EF6727D3C4CA00E03CC5 /* TableViewHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9EF6627D3C4CA00E03CC5 /* TableViewHucre.swift */; };
+		9BB4154D27E63DFF00846D5E /* KisilerCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4154C27E63DFF00846D5E /* KisilerCevap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		79B9EF2627CFD0B000E03CC5 /* KisiDetayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiDetayVC.swift; sourceTree = "<group>"; };
 		79B9EF2827CFDBBE00E03CC5 /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
 		79B9EF6627D3C4CA00E03CC5 /* TableViewHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHucre.swift; sourceTree = "<group>"; };
+		9BB4154C27E63DFF00846D5E /* KisilerCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisilerCevap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				79B9EF2827CFDBBE00E03CC5 /* Kisiler.swift */,
+				9BB4154C27E63DFF00846D5E /* KisilerCevap.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				793B7E7F27DFA4050039617A /* KisiKayitRouter.swift in Sources */,
 				79B9EF2727CFD0B000E03CC5 /* KisiDetayVC.swift in Sources */,
 				793B7E9C27DFB3B40039617A /* AnasayfaRouter.swift in Sources */,
+				9BB4154D27E63DFF00846D5E /* KisilerCevap.swift in Sources */,
 				793B7E9827DFB37C0039617A /* AnasayfaInteractor.swift in Sources */,
 				79B9EEF927CFCEF100E03CC5 /* AnasayfaVC.swift in Sources */,
 				793B7E9A27DFB39C0039617A /* AnasayfaPresenter.swift in Sources */,

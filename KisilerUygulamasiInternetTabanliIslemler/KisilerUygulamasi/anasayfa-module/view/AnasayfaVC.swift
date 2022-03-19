@@ -43,7 +43,9 @@ class AnasayfaVC: UIViewController {
 extension AnasayfaVC : PresenterToViewAnasayfaProtocol {
     func vieweVeriGonder(kisilerListesi: Array<Kisiler>) {
         self.kisilerListe = kisilerListesi
-        self.kisilerTableView.reloadData()
+        DispatchQueue.main.async {
+            self.kisilerTableView.reloadData()
+        }
     }
 }
 
@@ -84,7 +86,7 @@ extension AnasayfaVC : UITableViewDelegate,UITableViewDataSource {
             alert.addAction(iptalAction)
             
             let evetAction = UIAlertAction(title: "Evet", style: .destructive){ action in
-                self.anasayfaPresenterNesnesi?.sil(kisi_id: kisi.kisi_id!)
+                self.anasayfaPresenterNesnesi?.sil(kisi_id: Int(kisi.kisi_id!)!)
             }
             alert.addAction(evetAction)
             
