@@ -14,15 +14,15 @@ class YapilacakDetayVC: UIViewController {
     var yapilacak:Yapilacaklar?
     override func viewDidLoad() {
         super.viewDidLoad()
+        YapilacakDetayRouter.createModule(ref: self)
         if let y = yapilacak {
             tfYapilacak.text = y.yapilacak_ad
         }
-        YapilacakDetayRouter.createModule(ref: self)
+       
     }
     
     @IBAction func buttonGuncelle(_ sender: Any) {
         if let ya = tfYapilacak.text,let y = yapilacak {
-            
             yapilacakDetayPresenterNesnesi?.guncelle(yapilacak_id: y.yapilacak_id!, yapilacak_ad: ya)
             
         }

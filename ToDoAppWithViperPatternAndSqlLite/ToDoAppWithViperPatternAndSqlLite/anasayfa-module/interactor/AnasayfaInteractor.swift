@@ -47,9 +47,14 @@ class AnasayfaInteractor :PresenterToInteractorAnasayfaProtocol{
     
     func yapilacakSil(yapilacak_id: Int) {
         db?.open()
-        
+        do {
+            try db?.executeUpdate("DELETE FROM yapilacaklar WHERE yapilacak_id = ?", values: [yapilacak_id])
+            tumYapilacaklariAl()
+        }catch{
+        print("hata")
+        }
         db?.close()
-        print("\(yapilacak_id) silindi")
+       
     }
     
     

@@ -1,9 +1,4 @@
-//
-//  YapilacakKayitVC.swift
-//  ToDoAppWithViperPatternAndSqlLite
-//
-//  Created by Mehmet Saltan on 20.03.2022.
-//
+
 
 import UIKit
 
@@ -15,12 +10,13 @@ class YapilacakKayitVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        YapilacakKayitRouter.createModule(ref: self)
     }
     
     @IBAction func buttonKaydet(_ sender: Any) {
         if let ya = tfYapilacakAd.text  {
             yapilacakKayitPressenterNesnesi?.ekle(yapilacak_ad: ya)
-           print("Yapılacak")
+        
         }
     }
     

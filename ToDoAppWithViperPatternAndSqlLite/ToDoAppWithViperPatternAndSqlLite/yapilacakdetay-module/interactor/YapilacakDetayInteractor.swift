@@ -17,9 +17,13 @@ class YapilacakDetayInteractor : PresenterToInteractorYapilacakDetayProtocol{
     }
     func yapilacakGuncelle(yapilacak_id: Int, yapilacak_ad: String) {
         db?.open()
-        
+        do {
+            try db?.executeUpdate("UPDATE yapilacaklar SET yapilacak_ad = ? WHERE yapilacak_id = ?", values: [yapilacak_ad,yapilacak_id])
+        }catch{
+        print("hata")
+        }
         db?.close()
-        print("Yapılacak güncelle : \(yapilacak_id) - \(yapilacak_ad)")
+       
     }
     
     

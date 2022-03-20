@@ -1,9 +1,4 @@
-//
-//  KisiKayitRouter.swift
-//  KisilerUygulamasi
-//
-//  Created by Öznur Altıntaş on 14.03.2022.
-//
+
 
 import Foundation
 
