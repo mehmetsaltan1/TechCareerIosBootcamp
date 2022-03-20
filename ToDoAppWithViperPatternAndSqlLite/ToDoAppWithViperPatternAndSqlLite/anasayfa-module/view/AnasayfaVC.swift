@@ -30,8 +30,8 @@ class AnasayfaVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetay" {
             let yapilacak = sender as? Yapilacaklar
-           // let gidilecekVC = segue.destination as! KisiDetayVC
-            //gidilecekVC.kisi = kisi
+           let gidilecekVC = segue.destination as! YapilacakDetayVC
+            gidilecekVC.yapilacak = yapilacak
         }
     }
 }

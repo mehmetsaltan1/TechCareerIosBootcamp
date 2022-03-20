@@ -86,10 +86,42 @@
                     <view key="view" contentMode="scaleToFill" id="n63-3H-Kr5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LST-gE-xRl">
+                                <rect key="frame" x="32" y="430" width="350" height="39.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ekle">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonGuncelle:" destination="hY4-K8-XXI" eventType="touchUpInside" id="VST-2o-Px4"/>
+                                    <action selector="buttonKaydet:" destination="TsD-ol-xZ5" eventType="touchUpInside" id="waZ-ws-6qD"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yapılacak İş" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U5n-VH-G5j">
+                                <rect key="frame" x="32" y="348" width="350" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PWy-nK-YGR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gbr-gv-IGh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U5n-VH-G5j" firstAttribute="top" secondItem="gbr-gv-IGh" secondAttribute="top" constant="200" id="JNv-mP-MJE"/>
+                            <constraint firstItem="gbr-gv-IGh" firstAttribute="trailing" secondItem="U5n-VH-G5j" secondAttribute="trailing" constant="32" id="Ks7-q5-RU0"/>
+                            <constraint firstItem="LST-gE-xRl" firstAttribute="leading" secondItem="gbr-gv-IGh" secondAttribute="leading" constant="32" id="QBq-Yx-qhl"/>
+                            <constraint firstItem="LST-gE-xRl" firstAttribute="top" secondItem="U5n-VH-G5j" secondAttribute="bottom" constant="32" id="abC-05-N6T"/>
+                            <constraint firstItem="gbr-gv-IGh" firstAttribute="trailing" secondItem="LST-gE-xRl" secondAttribute="trailing" constant="32" id="pLX-iv-zEs"/>
+                            <constraint firstItem="U5n-VH-G5j" firstAttribute="leading" secondItem="gbr-gv-IGh" secondAttribute="leading" constant="32" id="zhw-DJ-fKr"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Yapılacak İş Kayıt" id="ybD-3w-7tB"/>
+                    <connections>
+                        <outlet property="tfYapilacakAd" destination="U5n-VH-G5j" id="YQO-cb-apM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vp3-22-Ust" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,10 +134,41 @@
                     <view key="view" contentMode="scaleToFill" id="0cW-eb-2TE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ig3-t3-UuK">
+                                <rect key="frame" x="32" y="348" width="350" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="32x-Q3-DvT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEr-BG-Ztj">
+                                <rect key="frame" x="32" y="430" width="350" height="39.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Güncelle">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonGuncelle:" destination="hY4-K8-XXI" eventType="touchUpInside" id="fnl-Io-G4r"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="deR-D0-eBU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WEr-BG-Ztj" firstAttribute="top" secondItem="ig3-t3-UuK" secondAttribute="bottom" constant="32" id="QzP-pS-ng9"/>
+                            <constraint firstItem="deR-D0-eBU" firstAttribute="trailing" secondItem="WEr-BG-Ztj" secondAttribute="trailing" constant="32" id="SNw-gp-Njo"/>
+                            <constraint firstItem="ig3-t3-UuK" firstAttribute="top" secondItem="deR-D0-eBU" secondAttribute="top" constant="200" id="czf-17-uOu"/>
+                            <constraint firstItem="ig3-t3-UuK" firstAttribute="leading" secondItem="deR-D0-eBU" secondAttribute="leading" constant="32" id="lLw-JT-nLn"/>
+                            <constraint firstItem="deR-D0-eBU" firstAttribute="trailing" secondItem="ig3-t3-UuK" secondAttribute="trailing" constant="32" id="lMr-a3-xVc"/>
+                            <constraint firstItem="WEr-BG-Ztj" firstAttribute="leading" secondItem="deR-D0-eBU" secondAttribute="leading" constant="32" id="lZa-gb-RbX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Yapılacak İş Detay" id="Cu5-2F-e2p"/>
+                    <connections>
+                        <outlet property="tfYapilacak" destination="ig3-t3-UuK" id="mNg-Ii-gcB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rc6-Ui-bUC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
