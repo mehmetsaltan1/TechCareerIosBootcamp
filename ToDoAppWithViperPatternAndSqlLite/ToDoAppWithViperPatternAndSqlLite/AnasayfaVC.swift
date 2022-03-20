@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AnasayfaVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

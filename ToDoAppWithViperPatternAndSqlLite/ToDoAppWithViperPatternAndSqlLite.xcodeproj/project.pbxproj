@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		9BB4155E27E72B7000846D5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4155D27E72B7000846D5E /* AppDelegate.swift */; };
 		9BB4156027E72B7000846D5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4155F27E72B7000846D5E /* SceneDelegate.swift */; };
-		9BB4156227E72B7000846D5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4156127E72B7000846D5E /* ViewController.swift */; };
+		9BB4156227E72B7000846D5E /* AnasayfaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4156127E72B7000846D5E /* AnasayfaVC.swift */; };
 		9BB4156527E72B7000846D5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB4156327E72B7000846D5E /* Main.storyboard */; };
 		9BB4156727E72B7200846D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB4156627E72B7200846D5E /* Assets.xcassets */; };
 		9BB4156A27E72B7200846D5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB4156827E72B7200846D5E /* LaunchScreen.storyboard */; };
 		9BB4157527E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4157427E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteTests.swift */; };
 		9BB4157F27E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4157E27E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITests.swift */; };
 		9BB4158127E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4158027E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITestsLaunchTests.swift */; };
+		9BB4159327E72FD600846D5E /* Yapilacaklar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4159227E72FD600846D5E /* Yapilacaklar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		9BB4155A27E72B7000846D5E /* ToDoAppWithViperPatternAndSqlLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoAppWithViperPatternAndSqlLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB4155D27E72B7000846D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB4155F27E72B7000846D5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9BB4156127E72B7000846D5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BB4156127E72B7000846D5E /* AnasayfaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaVC.swift; sourceTree = "<group>"; };
 		9BB4156427E72B7000846D5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BB4156627E72B7200846D5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BB4156927E72B7200846D5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		9BB4157A27E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoAppWithViperPatternAndSqlLiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB4157E27E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppWithViperPatternAndSqlLiteUITests.swift; sourceTree = "<group>"; };
 		9BB4158027E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppWithViperPatternAndSqlLiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9BB4159227E72FD600846D5E /* Yapilacaklar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yapilacaklar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,13 @@
 		9BB4155C27E72B7000846D5E /* ToDoAppWithViperPatternAndSqlLite */ = {
 			isa = PBXGroup;
 			children = (
+				9BB4159127E72FBB00846D5E /* entity */,
+				9BB4159027E72EC400846D5E /* yapilacakdetay-module */,
+				9BB4158F27E72EA300846D5E /* yapilacakkayit-module */,
+				9BB4158D27E72E8B00846D5E /* anasayfa-module */,
 				9BB4155D27E72B7000846D5E /* AppDelegate.swift */,
 				9BB4155F27E72B7000846D5E /* SceneDelegate.swift */,
-				9BB4156127E72B7000846D5E /* ViewController.swift */,
+				9BB4156127E72B7000846D5E /* AnasayfaVC.swift */,
 				9BB4156327E72B7000846D5E /* Main.storyboard */,
 				9BB4156627E72B7200846D5E /* Assets.xcassets */,
 				9BB4156827E72B7200846D5E /* LaunchScreen.storyboard */,
@@ -125,6 +131,35 @@
 				9BB4158027E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITestsLaunchTests.swift */,
 			);
 			path = ToDoAppWithViperPatternAndSqlLiteUITests;
+			sourceTree = "<group>";
+		};
+		9BB4158D27E72E8B00846D5E /* anasayfa-module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "anasayfa-module";
+			sourceTree = "<group>";
+		};
+		9BB4158F27E72EA300846D5E /* yapilacakkayit-module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "yapilacakkayit-module";
+			sourceTree = "<group>";
+		};
+		9BB4159027E72EC400846D5E /* yapilacakdetay-module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "yapilacakdetay-module";
+			sourceTree = "<group>";
+		};
+		9BB4159127E72FBB00846D5E /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				9BB4159227E72FD600846D5E /* Yapilacaklar.swift */,
+			);
+			path = entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BB4156227E72B7000846D5E /* ViewController.swift in Sources */,
+				9BB4156227E72B7000846D5E /* AnasayfaVC.swift in Sources */,
 				9BB4155E27E72B7000846D5E /* AppDelegate.swift in Sources */,
 				9BB4156027E72B7000846D5E /* SceneDelegate.swift in Sources */,
+				9BB4159327E72FD600846D5E /* Yapilacaklar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
