@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hgn-rK-TQr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -8,20 +8,126 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--AnasayfaVC-->
+        <!--Yapılacaklar-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="AnasayfaVC" customModule="ToDoAppWithViperPatternAndSqlLite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="5uh-0g-8n4">
+                                <rect key="frame" x="0.0" y="148" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5cJ-xO-fUQ">
+                                <rect key="frame" x="0.0" y="199" width="414" height="663"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="yapilacaklarHucre" id="5u8-gn-AZb" customClass="TableViewHucre" customModule="ToDoAppWithViperPatternAndSqlLite" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5u8-gn-AZb" id="5qY-m7-4Ct">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmy-pn-Aqy">
+                                                    <rect key="frame" x="186" y="39.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xmy-pn-Aqy" firstAttribute="centerX" secondItem="5qY-m7-4Ct" secondAttribute="centerX" id="jSd-eC-jic"/>
+                                                <constraint firstItem="xmy-pn-Aqy" firstAttribute="centerY" secondItem="5qY-m7-4Ct" secondAttribute="centerY" id="osa-cd-qr1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblYapilacaklarBilgi" destination="xmy-pn-Aqy" id="Y9l-Yq-qgC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5uh-0g-8n4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Dy-M5-08q"/>
+                            <constraint firstItem="5uh-0g-8n4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Fiw-JY-dey"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5cJ-xO-fUQ" secondAttribute="bottom" id="G9O-g8-bwg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5cJ-xO-fUQ" secondAttribute="trailing" id="MEd-5g-miI"/>
+                            <constraint firstItem="5uh-0g-8n4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Rdc-HC-Esg"/>
+                            <constraint firstItem="5cJ-xO-fUQ" firstAttribute="top" secondItem="5uh-0g-8n4" secondAttribute="bottom" id="WcG-Za-Gwj"/>
+                            <constraint firstItem="5cJ-xO-fUQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oL2-Tt-mGY"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Yapılacaklar" id="xbo-1t-nDj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NFd-R1-p0d">
+                            <connections>
+                                <segue destination="TsD-ol-xZ5" kind="show" id="v7a-Nc-UP1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="5uh-0g-8n4" id="yXG-iT-tTa"/>
+                        <outlet property="yapilacaklarTableView" destination="5cJ-xO-fUQ" id="WfB-VU-2GD"/>
+                        <segue destination="hY4-K8-XXI" kind="show" identifier="toDetay" id="zBH-9i-gdd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="84"/>
+            <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
+        </scene>
+        <!--Yapılacak İş Kayıt-->
+        <scene sceneID="Q5Q-a6-I05">
+            <objects>
+                <viewController id="TsD-ol-xZ5" customClass="YapilacakKayitVC" customModule="ToDoAppWithViperPatternAndSqlLite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n63-3H-Kr5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gbr-gv-IGh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yapılacak İş Kayıt" id="ybD-3w-7tB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vp3-22-Ust" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676" y="-353"/>
+        </scene>
+        <!--Yapılacak İş Detay-->
+        <scene sceneID="XKX-ZP-AEh">
+            <objects>
+                <viewController id="hY4-K8-XXI" customClass="YapilacakDetayVC" customModule="ToDoAppWithViperPatternAndSqlLite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0cW-eb-2TE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="deR-D0-eBU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yapılacak İş Detay" id="Cu5-2F-e2p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rc6-Ui-bUC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1675" y="432"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bgN-7Z-BhO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hgn-rK-TQr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="gq0-vF-42b">
+                        <rect key="frame" x="0.0" y="44" width="414" height="104"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="63a-bO-mGN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQM-pt-4Lq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>

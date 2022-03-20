@@ -17,6 +17,13 @@
 		9BB4157F27E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4157E27E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITests.swift */; };
 		9BB4158127E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4158027E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITestsLaunchTests.swift */; };
 		9BB4159327E72FD600846D5E /* Yapilacaklar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4159227E72FD600846D5E /* Yapilacaklar.swift */; };
+		9BB415B127E73C5900846D5E /* TableViewHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB415B027E73C5800846D5E /* TableViewHucre.swift */; };
+		9BB415B327E73E4300846D5E /* AnasayfaProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB415B227E73E4300846D5E /* AnasayfaProtocols.swift */; };
+		9BB415B527E73E9900846D5E /* AnasayfaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB415B427E73E9900846D5E /* AnasayfaPresenter.swift */; };
+		9BB415B727E7403200846D5E /* AnasayfaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB415B627E7403200846D5E /* AnasayfaInteractor.swift */; };
+		9BB415B927E7409A00846D5E /* AnasayfaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB415B827E7409A00846D5E /* AnasayfaRouter.swift */; };
+		9BB415BB27E7440B00846D5E /* YapilacakKayitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB415BA27E7440B00846D5E /* YapilacakKayitVC.swift */; };
+		9BB415BD27E7444B00846D5E /* YapilacakDetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB415BC27E7444B00846D5E /* YapilacakDetayVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		9BB4157E27E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppWithViperPatternAndSqlLiteUITests.swift; sourceTree = "<group>"; };
 		9BB4158027E72B7300846D5E /* ToDoAppWithViperPatternAndSqlLiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppWithViperPatternAndSqlLiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9BB4159227E72FD600846D5E /* Yapilacaklar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yapilacaklar.swift; sourceTree = "<group>"; };
+		9BB415B027E73C5800846D5E /* TableViewHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHucre.swift; sourceTree = "<group>"; };
+		9BB415B227E73E4300846D5E /* AnasayfaProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnasayfaProtocols.swift; sourceTree = "<group>"; };
+		9BB415B427E73E9900846D5E /* AnasayfaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnasayfaPresenter.swift; sourceTree = "<group>"; };
+		9BB415B627E7403200846D5E /* AnasayfaInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnasayfaInteractor.swift; sourceTree = "<group>"; };
+		9BB415B827E7409A00846D5E /* AnasayfaRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnasayfaRouter.swift; sourceTree = "<group>"; };
+		9BB415BA27E7440B00846D5E /* YapilacakKayitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapilacakKayitVC.swift; sourceTree = "<group>"; };
+		9BB415BC27E7444B00846D5E /* YapilacakDetayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapilacakDetayVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +121,6 @@
 				9BB4158D27E72E8B00846D5E /* anasayfa-module */,
 				9BB4155D27E72B7000846D5E /* AppDelegate.swift */,
 				9BB4155F27E72B7000846D5E /* SceneDelegate.swift */,
-				9BB4156127E72B7000846D5E /* AnasayfaVC.swift */,
 				9BB4156327E72B7000846D5E /* Main.storyboard */,
 				9BB4156627E72B7200846D5E /* Assets.xcassets */,
 				9BB4156827E72B7200846D5E /* LaunchScreen.storyboard */,
@@ -136,6 +149,12 @@
 		9BB4158D27E72E8B00846D5E /* anasayfa-module */ = {
 			isa = PBXGroup;
 			children = (
+				9BB415AF27E73C2D00846D5E /* tableview */,
+				9BB415AE27E739CA00846D5E /* protocols */,
+				9BB415AD27E739BF00846D5E /* presenter */,
+				9BB415AC27E739B500846D5E /* interactor */,
+				9BB415AB27E739AB00846D5E /* router */,
+				9BB415AA27E739A100846D5E /* view */,
 			);
 			path = "anasayfa-module";
 			sourceTree = "<group>";
@@ -143,6 +162,11 @@
 		9BB4158F27E72EA300846D5E /* yapilacakkayit-module */ = {
 			isa = PBXGroup;
 			children = (
+				9BB415A427E738C500846D5E /* router */,
+				9BB415A327E738BA00846D5E /* protocols */,
+				9BB415A227E738B000846D5E /* presenter */,
+				9BB415A127E738AA00846D5E /* view */,
+				9BB415A027E7387100846D5E /* interactor */,
 			);
 			path = "yapilacakkayit-module";
 			sourceTree = "<group>";
@@ -150,6 +174,11 @@
 		9BB4159027E72EC400846D5E /* yapilacakdetay-module */ = {
 			isa = PBXGroup;
 			children = (
+				9BB415A927E7397E00846D5E /* interactor */,
+				9BB415A827E7397700846D5E /* view */,
+				9BB415A727E7396E00846D5E /* presenter */,
+				9BB415A627E7396600846D5E /* protocols */,
+				9BB415A527E7395C00846D5E /* router */,
 			);
 			path = "yapilacakdetay-module";
 			sourceTree = "<group>";
@@ -160,6 +189,126 @@
 				9BB4159227E72FD600846D5E /* Yapilacaklar.swift */,
 			);
 			path = entity;
+			sourceTree = "<group>";
+		};
+		9BB415A027E7387100846D5E /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		9BB415A127E738AA00846D5E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9BB415BA27E7440B00846D5E /* YapilacakKayitVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9BB415A227E738B000846D5E /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		9BB415A327E738BA00846D5E /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		9BB415A427E738C500846D5E /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		9BB415A527E7395C00846D5E /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		9BB415A627E7396600846D5E /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		9BB415A727E7396E00846D5E /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		9BB415A827E7397700846D5E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9BB415BC27E7444B00846D5E /* YapilacakDetayVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9BB415A927E7397E00846D5E /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		9BB415AA27E739A100846D5E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9BB4156127E72B7000846D5E /* AnasayfaVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9BB415AB27E739AB00846D5E /* router */ = {
+			isa = PBXGroup;
+			children = (
+				9BB415B827E7409A00846D5E /* AnasayfaRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		9BB415AC27E739B500846D5E /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9BB415B627E7403200846D5E /* AnasayfaInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		9BB415AD27E739BF00846D5E /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9BB415B427E73E9900846D5E /* AnasayfaPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		9BB415AE27E739CA00846D5E /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9BB415B227E73E4300846D5E /* AnasayfaProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		9BB415AF27E73C2D00846D5E /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				9BB415B027E73C5800846D5E /* TableViewHucre.swift */,
+			);
+			path = tableview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,10 +442,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB415B927E7409A00846D5E /* AnasayfaRouter.swift in Sources */,
+				9BB415B527E73E9900846D5E /* AnasayfaPresenter.swift in Sources */,
 				9BB4156227E72B7000846D5E /* AnasayfaVC.swift in Sources */,
+				9BB415B727E7403200846D5E /* AnasayfaInteractor.swift in Sources */,
+				9BB415B327E73E4300846D5E /* AnasayfaProtocols.swift in Sources */,
 				9BB4155E27E72B7000846D5E /* AppDelegate.swift in Sources */,
 				9BB4156027E72B7000846D5E /* SceneDelegate.swift in Sources */,
+				9BB415B127E73C5900846D5E /* TableViewHucre.swift in Sources */,
 				9BB4159327E72FD600846D5E /* Yapilacaklar.swift in Sources */,
+				9BB415BB27E7440B00846D5E /* YapilacakKayitVC.swift in Sources */,
+				9BB415BD27E7444B00846D5E /* YapilacakDetayVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
