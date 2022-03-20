@@ -16,7 +16,7 @@ class AnasayfaVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
-        
+        veritabaniKopyala()
         yapilacaklarTableView.delegate = self
         yapilacaklarTableView.dataSource = self
         AnasayfaRouter.createModule(ref: self)
@@ -32,6 +32,19 @@ class AnasayfaVC: UIViewController {
             let yapilacak = sender as? Yapilacaklar
            let gidilecekVC = segue.destination as! YapilacakDetayVC
             gidilecekVC.yapilacak = yapilacak
+        }
+    }
+    func veritabaniKopyala(){
+        let bundleYolu = Bundle.main.path(forResource: "yapilacaklar", ofType: ".sqlite")
+        let hedefYol = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let kopyalanacakYer = URL(fileURLWithPath: hedefYol).appendingPathComponent("yapilacak.sqlite")
+        let fileManager = FileManager.default
+        if fileManager.fileExists(atPath: kopyalanacakYer.path) {
+            print("Veritabanı zaten var, kopyalamaya gerek yok")
+        } else{
+            do {
+                try fileManager.copyItem(atPath: bundleYolu!, toPath: kopyalanacakYer.path)
+            }catch{}
         }
     }
 }
